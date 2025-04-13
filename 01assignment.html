@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment</title>
+    
+    <style>
+        button{
+            background-color: rgb(254, 84, 32);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            margin: 8px;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+            
+        }
+        footer{
+            background-color: black;
+            color:white;
+        }
+        label{
+            font-weight: bold;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to the MENTIBY Feedback Portal</h1>
+        <button>
+            <a href="#intro">
+                Intro
+            </a>
+        </button>
+        <button>
+            <a href="#courses">
+                courses
+            </a>
+        </button>
+        <button>
+            <a href="#feedback">
+                Feedback
+            </a>
+        </button>
+        
+    </header>
+
+    <main>
+        <br>
+        <section id="intro">
+            <h2>What is MENTIBY?</h2>
+            <iframe width="560"
+                height="315" 
+                src="https://www.youtube.com/embed/OJefE-v-l34?si=9v17VBlhphe9BP69" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </section>
+        <section id="courses">
+            <h2>Courses List</h2>
+            <p>Check out the courses below to see what others are saying and how each one is rated.</p>
+            <table border="1">
+                <tr>
+                    <th rowspan="2">SI.NO</th>
+                    <th rowspan="2">Course Name</th>
+                    <th colspan="2">Instructor</th>
+                    <th rowspan="2">Difficulty</th>
+                    <th rowspan="2">Rating</th>
+                </tr>
+                <tr>
+                    <th>Recorded Classes</th>
+                    <th>Live Sessions</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Python</td>
+                    <td>Mr.Swaroop</td>
+                    <td>Mr.Praveen</td>
+                    <td>Easy</td>
+                    <td>4.7</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Web Development</td>
+                    <td>Mr.Swaroop</td>
+                    <td>Mr.Praveen</td>
+                    <td>Medium</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>C Programming</td>
+                    <td>Mr.Swaroop</td>
+                    <td>NAN</td>
+                    <td>Medium</td>
+                    <td>4.4</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>DSA [Java]</td>
+                    <td>Mr.Swaroop</td>
+                    <td>NAN</td>
+                    <td>Hard</td>
+                    <td>4.5</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="feedback">
+
+            <h2>Give the Feedback</h2>
+            <p>
+                How was your learning journey? 
+                Let us know what went well and what could be better.
+            </p>
+            <form>
+                <label for="name">Your Name : </label>
+                <input type="text" id="name" placeholder="Eg., Gowtham">
+                <br>
+                <br>
+                <label for="email">Your Email : </label>
+                <input type="email" id="email" placeholder="Eg., xyz@gmail.com">
+                <br>
+                <br>
+                <label for="course">Select course : </label>
+                <select id="course" name="course">
+                    <option value="Python">Python</option>
+                    <option value="DSA(Java)">DSA(Java)</option>
+                    <option value="Web-Development">Web-Development</option>
+                    <option value="C">C language</option>
+                    <option value="Placements-Prep">Placements-Prep</option>
+                </select>
+                <br>
+                <br>
+                <label for="feedback">Feedback : </label>
+                <textarea placeholder="Write your feedback for the course...." name="feedback"></textarea>
+                <br>
+                <br>
+                <input type="submit" name="submit">
+            </form>
+
+        </section>
+        
+        
+    </main>
+    
+    <footer>
+        <p>© 2025 MentiBy Cohort 2.0</p>
+    </footer>
+</body>
+</html>
